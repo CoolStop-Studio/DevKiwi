@@ -1,8 +1,8 @@
 import { WebContainer } from "@webcontainer/api";
 
-const outputPanel = document.getElementById("output-panel")
-const form = document.getElementById("form")
-const command = document.getElementById("command")
+const outputPanel = document.getElementById("output-panel")!
+const form = document.getElementById("form")!
+const command = <HTMLInputElement>document.getElementById("command")!
 
 const reportOutput = (output: string) => {
     outputPanel.textContent += '\n' + output
