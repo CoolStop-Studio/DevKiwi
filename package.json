@@ -1,0 +1,26 @@
+{
+  "name": "devkiwi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoolStop-Studio/DevKiwi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoolStop-Studio/DevKiwi/issues"
+  },
+  "homepage": "https://github.com/CoolStop-Studio/DevKiwi#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@webcontainer/api": "^1.6.1"
+  }
+}
