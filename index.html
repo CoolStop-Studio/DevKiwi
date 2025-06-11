@@ -1,26 +1,17 @@
-<form id="form">
-    <label>
-        Command
-        <input type="text" id="command" />
-    </label>
-    <button>Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Terminal</title>
+  <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+  <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
+  <script type="module" src="terminal.ts"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<pre>
-    <code style="
-    display: flex;
-    flex-direction: column-reverse;
-    width: 90%;
-    height:400px;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    padding: 8px;
-    overflow: auto;
-    "
-    id="output-panel">
+<body>
+  <div id="terminal"></div>
 
-    </code>
-</pre>
-
-<script src="index.ts" type="module"></script>
+  
+</body>
+</html>

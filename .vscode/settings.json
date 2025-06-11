@@ -4,7 +4,20 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "vite.config.js": true,
+        "README.md": true,
+        "package-lock.json": true,
+        "package.json": true,
+        ".vscode": true,
+        "node_modules": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "vite.config.js",
+        "README.md",
+        "package-lock.json",
+        "package.json",
+        ".vscode",
+        "node_modules"
+    ]
 }
