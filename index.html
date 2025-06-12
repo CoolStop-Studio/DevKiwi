@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Browser Terminal</title>
-  <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
-  <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
-  <script type="module" src="terminal.ts"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Browser Terminal + Monaco Editor</title>
 
-<body>
-  <div id="terminal"></div>
+    <!-- Xterm and Fonts -->
+    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
 
-  
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="files"
+      class="window"
+      style="position: absolute; top: 0; left: 0; width: 20%; height: 100%"
+    ></div>
+    <div
+      id="editor"
+      class="window"
+      style="position: absolute; top: 0; left: 20%; width: 40%; height: 100%"
+    ></div>
+    <div
+      id="preview"
+      class="window"
+      style="position: absolute; top: 0; left: 60%; width: 40%; height: 50%"
+    ></div>
+    <div
+      id="terminal"
+      class="window"
+      style="position: absolute; top: 50%; left: 60%; width: 40%; height: 50%"
+    ></div>
+
+    <script type="module" src="editor.ts"></script>
+    <script type="module" src="terminal.ts"></script>
+  </body>
 </html>

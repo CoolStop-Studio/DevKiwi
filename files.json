@@ -1,0 +1,12 @@
+{
+  "package.json": {
+    "file": {
+      "contents": "{\n  \"name\": \"my-app\",\n  \"private\": true,\n  \"devDependencies\": {\n    \"vite\": \"^4.0.0\"\n  }\n}"
+    }
+  },
+  "index.html": {
+    "file": {
+      "contents": "<!DOCTYPE html><html><body>Hello!</body></html>"
+    }
+  }
+}
